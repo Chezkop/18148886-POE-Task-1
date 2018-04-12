@@ -57,8 +57,21 @@ namespace _18148886_POE_Task_1
             register.ShowDialog();
 
             if (register.Lecturer || register.Student) {
-                User newUser = new User(tx)
+                String username;
+                if (register.Lecturer) {
+                    username = ("L" + (User.getSizeOfFile()+1).ToString("0000"));
+
+                }
+                else {
+                 username = ("L" + (User.getSizeOfFile()+1).ToString("0000"));
+                }
+
                 
+                User newUser = new User(username, register.Password, register.FirstName, register.SecondName);
+
+                User.addUserToFile(newUser);
+                User.saveLogins();
+
             }
             
         }

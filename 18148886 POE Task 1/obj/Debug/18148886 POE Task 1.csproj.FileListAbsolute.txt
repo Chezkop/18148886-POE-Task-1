@@ -40,3 +40,18 @@ C:\Users\18148886\Source\Repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug
 C:\Users\18148886\Source\Repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.csproj.CoreCompileInputs.cache
 C:\Users\18148886\Source\Repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.exe
 C:\Users\18148886\Source\Repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.pdb
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\bin\Debug\18148886 POE Task 1.exe.config
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\bin\Debug\18148886 POE Task 1.exe
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\bin\Debug\18148886 POE Task 1.pdb
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.csprojResolveAssemblyReference.cache
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.Form1.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.Properties.Resources.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.RegisterUser.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.StudentForm.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.StudentQuiz.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.StudentQuizAnswerForm.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\_18148886_POE_Task_1.TeacherForm.resources
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.csproj.GenerateResource.cache
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.csproj.CoreCompileInputs.cache
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.exe
+C:\Users\mattb\source\repos\18148886-POE-Task-1\18148886 POE Task 1\obj\Debug\18148886 POE Task 1.pdb

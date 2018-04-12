@@ -36,6 +36,10 @@ namespace _18148886_POE_Task_1
            
             
         }
+        public static int getSizeOfFile() {
+
+            return logins.Count;
+        }
 
         public static void addUserToFile(User user) {
             logins.Add(user);
@@ -53,8 +57,17 @@ namespace _18148886_POE_Task_1
             logins.Remove(user);
         }
 
-        
 
+        public static void saveLogins() {
+            StreamWriter writer = new StreamWriter(path);
+
+            foreach (User user in logins) {
+ 
+               
+                writer.WriteLine("{0},{1},{2},{3}", user.Username, user.Password, user.FirstName, user.SecondName);
+            }
+            writer.Close();
+        }
         public static void importLoginDetails() {
             
             string line;
@@ -76,14 +89,15 @@ namespace _18148886_POE_Task_1
                 }
 
 
-
+                reader.Close();
             }
             else
             {
                 MessageBox.Show("Text file containting logins not found, creating new text file");
                 StreamWriter writer = new StreamWriter(path);
-
+                writer.Close();
             }
+           
         }
        public bool checkLogin(User userLogin) {
             bool flag = false;
