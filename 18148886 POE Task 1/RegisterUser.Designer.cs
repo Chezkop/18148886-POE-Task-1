@@ -47,7 +47,7 @@
             this.rdoLecturer.Location = new System.Drawing.Point(103, 34);
             this.rdoLecturer.Name = "rdoLecturer";
             this.rdoLecturer.Size = new System.Drawing.Size(64, 17);
-            this.rdoLecturer.TabIndex = 0;
+            this.rdoLecturer.TabIndex = 1;
             this.rdoLecturer.TabStop = true;
             this.rdoLecturer.Text = "Lecturer";
             this.rdoLecturer.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             this.rdoStudent.Location = new System.Drawing.Point(12, 34);
             this.rdoStudent.Name = "rdoStudent";
             this.rdoStudent.Size = new System.Drawing.Size(62, 17);
-            this.rdoStudent.TabIndex = 1;
+            this.rdoStudent.TabIndex = 0;
             this.rdoStudent.TabStop = true;
             this.rdoStudent.Text = "Student";
             this.rdoStudent.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@
             this.txtFirstName.Location = new System.Drawing.Point(93, 57);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(100, 20);
-            this.txtFirstName.TabIndex = 3;
+            this.txtFirstName.TabIndex = 2;
             // 
             // label2
             // 
@@ -104,14 +104,14 @@
             this.txtPassword.Location = new System.Drawing.Point(93, 109);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
-            this.txtPassword.TabIndex = 6;
+            this.txtPassword.TabIndex = 4;
             // 
             // btnSubmit
             // 
             this.btnSubmit.Location = new System.Drawing.Point(15, 160);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(75, 23);
-            this.btnSubmit.TabIndex = 7;
+            this.btnSubmit.TabIndex = 5;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
@@ -121,7 +121,7 @@
             this.txtSecondName.Location = new System.Drawing.Point(93, 83);
             this.txtSecondName.Name = "txtSecondName";
             this.txtSecondName.Size = new System.Drawing.Size(100, 20);
-            this.txtSecondName.TabIndex = 8;
+            this.txtSecondName.TabIndex = 3;
             // 
             // label4
             // 
@@ -137,7 +137,7 @@
             this.btnCancel.Location = new System.Drawing.Point(155, 160);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(81, 23);
-            this.btnCancel.TabIndex = 10;
+            this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);

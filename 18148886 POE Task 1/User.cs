@@ -11,6 +11,7 @@ namespace _18148886_POE_Task_1
         String password;
         String firstName;
         String secondName;
+        String userType;
         static List<User> logins = new List<User>();
         static string path = @"LoginDetails.txt";
 
@@ -20,12 +21,15 @@ namespace _18148886_POE_Task_1
        public string FirstName { get => firstName; set => firstName = value; }
 
        public string SecondName { get => secondName; set => secondName = value; }
+       public string UserType {get => userType; set => userType = value;  }
+       
 
-        public User(string username, string password,string firstName,string secondName) {
+        public User(string username, string password,string firstName,string secondName,String userType) {
             this.username = username;
             this.password = password;
             this.firstName = firstName;
             this.secondName = secondName;
+            this.userType = userType;
         }
 
 
@@ -64,7 +68,7 @@ namespace _18148886_POE_Task_1
             foreach (User user in logins) {
  
                
-                writer.WriteLine("{0},{1},{2},{3}", user.Username, user.Password, user.FirstName, user.SecondName);
+                writer.WriteLine("{0},{1},{2},{3},{4}", user.Username, user.Password, user.FirstName, user.SecondName, user.UserType);
             }
             writer.Close();
         }
@@ -82,7 +86,7 @@ namespace _18148886_POE_Task_1
                     line = reader.ReadLine();
                     String[] split = line.Split(',');
 
-                    logins.Add(new User(split[0], split[1],split[2],split[3]));
+                    logins.Add(new User(split[0], split[1],split[2],split[3],split[4]));
 
 
 
@@ -99,13 +103,15 @@ namespace _18148886_POE_Task_1
             }
            
         }
-       public bool checkLogin(User userLogin) {
+       public bool checkLogin(User userLogin, out User userFound ) {
             bool flag = false;
+            userFound = null;
             foreach (User  login in logins)
             {
                 if (userLogin.Username.Equals(login.Username) && userLogin.Password.Equals(login.Password))
                 {
                     flag = true;
+                    userFound = login;
                    
                 }
             }

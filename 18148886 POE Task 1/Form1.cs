@@ -28,10 +28,10 @@ namespace _18148886_POE_Task_1
             
             
             User userLogin = new User(txtUsername.Text, txtPassword.Text);
-            if (userLogin.checkLogin(userLogin))
+            if (userLogin.checkLogin(userLogin, out User userFound))
             {
 
-                if (userLogin.Username.StartsWith("L"))
+                if (userFound.UserType.StartsWith("L"))
                 {
                     TeacherForm teacher = new TeacherForm();
                     teacher.Show();
@@ -55,22 +55,28 @@ namespace _18148886_POE_Task_1
         {
             RegisterUser register = new RegisterUser();
             register.ShowDialog();
+            String username;
+            String userType;
 
+            username = (User.getSizeOfFile() + 1).ToString("0000");
             if (register.Lecturer || register.Student) {
-                String username;
+                
                 if (register.Lecturer) {
-                    username = ("L" + (User.getSizeOfFile()+1).ToString("0000"));
+                    userType = "L";
 
                 }
                 else {
-                 username = ("L" + (User.getSizeOfFile()+1).ToString("0000"));
+                    userType = "S";
                 }
 
                 
-                User newUser = new User(username, register.Password, register.FirstName, register.SecondName);
+                User newUser = new User(username, register.Password, register.FirstName, register.SecondName,userType);
 
                 User.addUserToFile(newUser);
                 User.saveLogins();
+
+                MessageBox.Show("Your user ID is : " + username);
+                txtUsername.Text = username;
 
             }
             
